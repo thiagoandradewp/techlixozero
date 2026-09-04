@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tech Lixo Zero — informação e pontos de coleta para o descarte correto de lixo eletrônico em Serra Talhada e região.">
+  <title>Tech Lixo Zero | Descarte eletrônico consciente</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Tech Lixo Zero - início">
+        <span class="brand-mark">♻</span>
+        <span>Tech <strong>Lixo Zero</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-descartar">Como descartar</a>
+        <a href="#pontos">Pontos de coleta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">🌱 Educação • Tecnologia • Sustentabilidade</span>
+          <h1>Seu eletrônico antigo pode ter um <span>destino melhor.</span></h1>
+          <p>Aprenda a descartar lixo eletrônico de forma consciente e encontre pontos de coleta em Serra Talhada e região.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pontos">Encontrar ponto de coleta <span>→</span></a>
+            <a class="btn btn-secondary" href="#como-descartar">Aprender a descartar</a>
+          </div>
+          <div class="hero-note"><span>✓</span> Pequenas atitudes geram grandes impactos.</div>
+        </div>
+
+        <div class="hero-card" aria-label="Ilustração sobre reciclagem eletrônica">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="device device-phone">📱</div>
+          <div class="device device-laptop">💻</div>
+          <div class="device device-battery">🔋</div>
+          <div class="leaf leaf-a">🌿</div>
+          <div class="leaf leaf-b">🍃</div>
+          <div class="hero-card-center">♻<small>REUSE<br>RECYCLE</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>♻</strong><span>Materiais podem ser<br>reaproveitados</span></div>
+        <div><strong>🌎</strong><span>Menos resíduos<br>no meio ambiente</span></div>
+        <div><strong>💚</strong><span>Mais consciência<br>na comunidade</span></div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="sobre">
+      <div class="container two-col">
+        <div>
+          <span class="section-kicker">POR QUE ISSO IMPORTA?</span>
+          <h2>O lixo eletrônico não desaparece quando sai das nossas mãos.</h2>
+          <p>Celulares, computadores, tablets, cabos, pilhas e outros equipamentos possuem materiais que podem voltar à cadeia produtiva. Quando descartados de maneira incorreta, porém, podem causar impactos ambientais e sociais.</p>
+          <div class="check-list">
+            <div><span>✓</span><p><b>Proteja o meio ambiente</b><br>Evite que resíduos sejam descartados em locais inadequados.</p></div>
+            <div><span>✓</span><p><b>Recupere materiais valiosos</b><br>Metais e componentes podem ser reaproveitados.</p></div>
+            <div><span>✓</span><p><b>Cuide da comunidade</b><br>O descarte correto reduz riscos e incentiva hábitos sustentáveis.</p></div>
+          </div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">💻</div>
+          <div>
+            <span class="section-kicker">VOCÊ SABIA?</span>
+            <h3>Eletrônicos têm valor mesmo quando não funcionam mais.</h3>
+            <p>Um equipamento quebrado pode conter plástico, vidro, cobre, alumínio e outros materiais que podem ser encaminhados para processos de recuperação.</p>
+          </div>
+          <div class="impact-footer">Descarte certo • Reutilização • Reciclagem</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="como-descartar">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">COMO FAZER</span>
+          <h2>Descarte em 4 passos</h2>
+          <p>É simples começar. Antes de jogar qualquer eletrônico no lixo comum, procure uma alternativa adequada.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step"><span>01</span><div class="step-icon">🔎</div><h3>Separe</h3><p>Identifique os eletrônicos que não são mais utilizados.</p></article>
+          <article class="step"><span>02</span><div class="step-icon">🔐</div><h3>Proteja seus dados</h3><p>Apague informações pessoais e faça backup antes de entregar o equipamento.</p></article>
+          <article class="step"><span>03</span><div class="step-icon">📍</div><h3>Encontre um ponto</h3><p>Use o mapa abaixo para localizar um ponto de coleta cadastrado.</p></article>
+          <article class="step"><span>04</span><div class="step-icon">♻️</div><h3>Entregue</h3><p>Leve o material ao ponto e ajude a dar um novo destino aos resíduos.</p></article>
+        </div>
+
+        <div class="video-wrap">
+          <div class="video-copy">
+            <span class="section-kicker">APRENDA NA PRÁTICA</span>
+            <h3>Como descartar lixo eletrônico?</h3>
+            <p>Confira o vídeo e compartilhe essa informação com sua comunidade.</p>
+          </div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/n3Pn2iAhyjw?rel=0&playsinline=1" title="Como descartar lixo eletrônico" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="pontos">
+      <div class="container">
+        <div class="map-heading">
+          <div>
+            <span class="section-kicker">REDE DE COLETA</span>
+            <h2>Encontre um ponto de coleta</h2>
+            <p>Pesquise por cidade ou nome do ponto. No mapa, clique nos marcadores para ver os detalhes.</p>
+          </div>
+          <div class="map-tools">
+            <label>
+              <span class="sr-only">Pesquisar ponto</span>
+              <input id="pointSearch" type="search" placeholder="🔎  Buscar ponto ou cidade...">
+            </label>
+            <button class="location-btn" id="locateBtn">Usar minha localização</button>
+          </div>
+        </div>
+
+        <div class="map-layout">
+          <aside class="points-panel">
+            <div class="points-count"><span id="pointsCount">0</span> ponto(s) encontrado(s)</div>
+            <div id="pointsList" class="points-list"></div>
+          </aside>
+          <div id="map" class="map" aria-label="Mapa dos pontos de coleta"></div>
+        </div>
+
+        <div class="admin-tip">
+          <b>Para cadastrar pontos:</b> edite o array <code>collectionPoints</code> no arquivo <code>script.js</code>. Não é necessário banco de dados para esta versão estática.
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-project">
+      <div class="container about-box">
+        <div class="about-badge">🌱</div>
+        <div>
+          <span class="section-kicker">SOBRE O PROJETO</span>
+          <h2>Educação e tecnologia para transformar realidades.</h2>
+          <p>O <b>Tech Lixo Zero</b> é um projeto desenvolvido por alunos do curso Técnico em Desenvolvimento de Sistemas e do curso Técnico Integrado ao Ensino Médio (MEDIOTEC), com orientação do professor <b>Thiago Andrade</b>, do SENAC Serra Talhada.</p>
+          <p>A proposta é conscientizar a população sobre os perigos do lixo eletrônico e do lixo invisível, além de facilitar o acesso à informação e aos pontos de coleta em Serra Talhada e região.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">QUEM FAZ PARTE</span>
+          <h2>Turmas que contribuíram para o projeto</h2>
+          <p>O projeto nasceu em sala de aula e foi construído de forma colaborativa.</p>
+        </div>
+        <div class="team-grid">
+          <article class="person featured">
+            <div class="avatar teacher">TA</div>
+            <h3>Thiago Andrade</h3><span>Docente • SENAC Serra Talhada</span>
+          </article>
+          <article class="person"><div class="avatar">TS</div><h3>Técnico em Desenvolvimento de Sistemas</h3><span>Turma 2025 • Serra Talhada</span></article>
+          <article class="person"><div class="avatar">MT</div><h3>Técnico Integrado ao Ensino Médio</h3><span>MEDIOTEC 2025 • Serra Talhada</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div><span class="section-kicker">FAÇA PARTE</span><h2>O futuro é nosso. A responsabilidade começa hoje.</h2><p>Compartilhe conhecimento, encontre um ponto de coleta e incentive mais pessoas a descartar corretamente.</p></div>
+        <a class="btn btn-light" href="#pontos">Ver pontos de coleta →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">♻</span><span>Tech <strong>Lixo Zero</strong></span></a><p>Transformando o descarte de lixo eletrônico através da educação e da tecnologia.</p></div>
+      <div><h4>Navegação</h4><a href="#sobre">Sobre</a><a href="#como-descartar">Como descartar</a><a href="#pontos">Pontos de coleta</a></div>
+      <div><h4>Projeto</h4><span>SENAC Serra Talhada</span><span>Turmas 2025</span><span>Educação + Tecnologia</span></div>
+    </div>
+    <div class="footer-bottom"><div class="container">© 2026 Tech Lixo Zero. Projeto educacional.</div></div>
+  </footer>
+
+  <button id="topBtn" class="top-btn" aria-label="Voltar ao topo">↑</button>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
