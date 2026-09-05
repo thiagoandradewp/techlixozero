@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d4229">
   <meta name="description" content="Tech Lixo Zero — informação e pontos de coleta para o descarte correto de lixo eletrônico em Serra Talhada e região.">
   <title>Tech Lixo Zero | Descarte eletrônico consciente</title>
 
@@ -41,6 +42,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">🌱 Educação • Tecnologia • Sustentabilidade</span>
+          <div class="project-pill"><span class="project-pill-dot"></span> Projeto desenvolvido em 2025 • desde junho</div>
           <h1>Seu eletrônico antigo pode ter um <span>destino melhor.</span></h1>
           <p>Aprenda a descartar lixo eletrônico de forma consciente e encontre pontos de coleta em Serra Talhada e região.</p>
           <div class="hero-actions">
@@ -129,16 +131,23 @@
           <div>
             <span class="section-kicker">REDE DE COLETA</span>
             <h2>Encontre um ponto de coleta</h2>
-            <p>Pesquise por cidade ou nome do ponto. No mapa, clique nos marcadores para ver os detalhes.</p>
+            <p>Filtre por cidade ou pesquise pelo nome do ponto, endereço ou material aceito.</p>
           </div>
           <div class="map-tools">
-            <label>
+            <label class="filter-field">
+              <span class="sr-only">Filtrar por cidade</span>
+              <select id="cityFilter" aria-label="Filtrar pontos por cidade">
+                <option value="">Todas as cidades</option>
+              </select>
+            </label>
+            <label class="filter-field search-field">
               <span class="sr-only">Pesquisar ponto</span>
-              <input id="pointSearch" type="search" placeholder="🔎  Buscar ponto ou cidade...">
+              <input id="pointSearch" type="search" placeholder="🔎  Buscar ponto ou material..." autocomplete="off">
             </label>
             <button class="location-btn" id="locateBtn">Usar minha localização</button>
           </div>
         </div>
+        <p class="filter-help" id="filterSummary">O filtro de cidades é atualizado automaticamente quando novos pontos são cadastrados.</p>
 
         <div class="map-layout">
           <aside class="points-panel">
@@ -149,7 +158,7 @@
         </div>
 
         <div class="admin-tip">
-          <b>Para cadastrar pontos:</b> edite o array <code>collectionPoints</code> no arquivo <code>script.js</code>. Não é necessário banco de dados para esta versão estática.
+          <b>Para cadastrar pontos:</b> edite o array <code>collectionPoints</code> no arquivo <code>script.js</code>. O filtro de cidades será criado automaticamente a partir dos dados cadastrados.
         </div>
       </div>
     </section>
@@ -161,7 +170,12 @@
           <span class="section-kicker">SOBRE O PROJETO</span>
           <h2>Educação e tecnologia para transformar realidades.</h2>
           <p>O <b>Tech Lixo Zero</b> é um projeto desenvolvido por alunos do curso Técnico em Desenvolvimento de Sistemas e do curso Técnico Integrado ao Ensino Médio (MEDIOTEC), com orientação do professor <b>Thiago Andrade</b>, do SENAC Serra Talhada.</p>
-          <p>A proposta é conscientizar a população sobre os perigos do lixo eletrônico e do lixo invisível, além de facilitar o acesso à informação e aos pontos de coleta em Serra Talhada e região.</p>
+          <p>A iniciativa foi desenvolvida em <b>2025</b>, com início em <b>junho de 2025</b>, em parceria com a <b>Rodarpe</b>. A proposta é conscientizar a população sobre os perigos do lixo eletrônico e do lixo invisível, além de facilitar o acesso à informação e aos pontos de coleta em Serra Talhada e região.</p>
+          <div class="project-meta" aria-label="Informações principais do projeto">
+            <div><strong>2025</strong><span>Projeto desenvolvido</span></div>
+            <div><strong>Junho/25</strong><span>Início da iniciativa</span></div>
+            <div><strong>Rodarpe</strong><span>Parceria do projeto</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -175,7 +189,9 @@
         </div>
         <div class="team-grid">
           <article class="person featured">
-            <div class="avatar teacher">TA</div>
+            <div class="avatar teacher avatar-photo">
+              <img src="https://thiagoandrade.dev.br/wp-content/uploads/2026/07/Gemini_Generated_Image_o4fz4do4fz4do4fz-1024x1024.png" alt="Foto de Thiago Andrade" loading="lazy">
+            </div>
             <h3>Thiago Andrade</h3><span>Docente • SENAC Serra Talhada</span>
           </article>
           <article class="person"><div class="avatar">TS</div><h3>Técnico em Desenvolvimento de Sistemas</h3><span>Turma 2025 • Serra Talhada</span></article>
@@ -196,9 +212,9 @@
     <div class="container footer-grid">
       <div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">♻</span><span>Tech <strong>Lixo Zero</strong></span></a><p>Transformando o descarte de lixo eletrônico através da educação e da tecnologia.</p></div>
       <div><h4>Navegação</h4><a href="#sobre">Sobre</a><a href="#como-descartar">Como descartar</a><a href="#pontos">Pontos de coleta</a></div>
-      <div><h4>Projeto</h4><span>SENAC Serra Talhada</span><span>Turmas 2025</span><span>Educação + Tecnologia</span></div>
+      <div><h4>Projeto</h4><span>SENAC Serra Talhada</span><span>Rodarpe</span><span>Desenvolvido em 2025</span><span>Desde junho/2025</span></div>
     </div>
-    <div class="footer-bottom"><div class="container">© 2026 Tech Lixo Zero. Projeto educacional.</div></div>
+    <div class="footer-bottom"><div class="container">© 2025 Tech Lixo Zero. Projeto educacional desenvolvido desde junho de 2025.</div></div>
   </footer>
 
   <button id="topBtn" class="top-btn" aria-label="Voltar ao topo">↑</button>
@@ -207,3 +223,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
